@@ -1,5 +1,4 @@
 package com.barbershop.supporter.dao.impl;
-
 import com.barbershop.supporter.dao.interfaces.GreetingDAO;
 import com.barbershop.supporter.model.Greeting;
 import org.springframework.stereotype.Repository;
