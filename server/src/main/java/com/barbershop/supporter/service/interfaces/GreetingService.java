@@ -1,4 +1,4 @@
-package ir.mr1213.restapi.service.interfaces;
+package com.barbershop.supporter.service.interfaces;
 
 public interface GreetingService {
 }

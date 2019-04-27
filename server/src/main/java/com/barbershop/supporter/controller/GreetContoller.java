@@ -1,15 +1,10 @@
-package ir.mr1213.restapi.controller;
-import java.util.List;
+package com.barbershop.supporter.controller;
 import java.util.concurrent.atomic.AtomicLong;
-
-import ir.mr1213.restapi.model.Greeting;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
+import com.barbershop.supporter.model.Greeting;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 
 @Controller

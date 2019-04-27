@@ -1,5 +1,5 @@
-package ir.mr1213.restapi.service.impl;
-import ir.mr1213.restapi.service.interfaces.GreetingService;
+package com.barbershop.supporter.service.impl;
+import com.barbershop.supporter.service.interfaces.GreetingService;
 import org.springframework.stereotype.Service;
 
 @Service("GreetingServiceImp")

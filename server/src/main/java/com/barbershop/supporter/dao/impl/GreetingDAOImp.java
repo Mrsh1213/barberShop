@@ -1,7 +1,7 @@
-package ir.mr1213.restapi.dao.impl;
+package com.barbershop.supporter.dao.impl;
 
-import ir.mr1213.restapi.dao.interfaces.GreetingDAO;
-import ir.mr1213.restapi.model.Greeting;
+import com.barbershop.supporter.dao.interfaces.GreetingDAO;
+import com.barbershop.supporter.model.Greeting;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;

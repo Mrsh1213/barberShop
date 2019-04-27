@@ -1,7 +1,7 @@
-package ir.mr1213.restapi.dao.interfaces;
+package com.barbershop.supporter.dao.interfaces;
 
 
-import ir.mr1213.restapi.model.Greeting;
+import com.barbershop.supporter.model.Greeting;
 
 import java.util.List;
 

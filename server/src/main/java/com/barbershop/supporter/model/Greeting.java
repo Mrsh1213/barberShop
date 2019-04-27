@@ -1,4 +1,4 @@
-package ir.mr1213.restapi.model;
+package com.barbershop.supporter.model;
 
 
 public class Greeting {
