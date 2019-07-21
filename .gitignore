@@ -2,15 +2,17 @@
 
 # dependencies
 /client/node_modules
+/server/node_modules
 /.pnp
 /.idea
 .idea
 .git
 .pnp.js
 /client/package-lock.json
+/server/package-lock.json
 # testing
 /coverage
-
+.gitignore
 # production
 /build
 
