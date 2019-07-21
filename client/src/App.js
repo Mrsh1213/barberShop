@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
-import {Route, Switch} from 'react-router-dom';
-import Test from "./component/Test";
-
+import {Route, Switch, withRouter} from 'react-router-dom';
+import SignIn from "./pages/SignIn";
 
 
 class App extends Component {
-  render() {
-    return (
-        <Switch>
-        <Route exact path={"/"}
-      component={Test}/>
-
-      </Switch>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <Switch>
+                    <Route exact path={"/signin"}
+                           component={SignIn}/>
+                </Switch>
+            </div>
+        );
+    }
 }
 
-export default App;
+export default withRouter(App);
