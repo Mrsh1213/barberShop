@@ -52,11 +52,11 @@ let getToken = async function (username, password) {
                     {expiresIn: process.env.TOKEN_EXPIRES_IN}
                 );
 // return the JWT token for the future API calls
-                return ({
+                return {
                     status: 1,
                     msg: 'Authentication successful!',
                     token: token
-                });
+                };
             } else {
                 return {
                     status: -1,
@@ -76,13 +76,18 @@ let getToken = async function (username, password) {
 }
 let hasRole=function (roles){
     return function(req, res, next) {
+        var access=0;
         for(let i=0;i<roles.length;i++){
             if (req.user.role === roles[i]) {
-                next();
+                access=1;
                 break;
             }
         }
-        res.status(401).json({message:"شما مجوز دسترسی به این بخش را ندارید"})
+        if(access==1){
+            next();
+        }else {
+            res.status(401).json({message:"شما مجوز دسترسی به این بخش را ندارید"})
+        }
 
     }
 }

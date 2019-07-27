@@ -5,8 +5,8 @@ const {findByUsername, addUser,User} = require("../models/User");
 
 
 /* GET home page. */
-router.get('/dashboard',checkToken,hasRole(["SUPPORTER","CUSTOMER"]) ,function (req, res) {
-    res.json({Dashboard:"Dashboard"});
+router.get('/dashboard',checkToken,hasRole(["ADMIN","SUPPORTER","CUSTOMER"]) ,function (req, res) {
+    res.status(200).json({Dashboard:"Dashboard"});
 });
 router.get('/getUser/:username?', function (req, res, next) {
     const {username} = req.params;

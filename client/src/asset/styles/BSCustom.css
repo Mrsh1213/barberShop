@@ -1,0 +1,28 @@
+/*@font-face {*/
+    /*font-family: Tanha;*/
+    /*src: url('../../asset/.eot');*/
+    /*src: url('.eot?#iefix') format('embedded-opentype'),*/
+    /*url('tanha.woff') format('woff'),*/
+    /*url('.ttf') format('truetype');*/
+    /*font-weight: normal;*/
+/*}*/
+body{
+    font-family: Tanha !important;
+}
+.form-group{
+    text-align: right;
+}
+
+.input-group-text{
+    border-bottom-right-radius: 0.5rem !important;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 0.5rem !important;
+    border-top-left-radius: unset;
+}
+
+.form-control {
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: unset;
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: unset;
+}

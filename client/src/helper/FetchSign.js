@@ -1,15 +1,16 @@
+import axios from 'axios'
 class FetchSign {
 
     //get
-    static async readApi(requestObject) {
+    static async readApi(url) {
         //url,reqConfig
-        axios.get(api, { headers: {"Authorization" : `Bearer ${token}`} })
+        axios.get(url, { headers: {"Authorization" : `Bearer ${token}`} })
             .then(res => {
                 console.log(res.data);
 
             }).catch(err=>{
-                    console.log(err);
-                })
+            console.log(err);
+        })
 
     }
     static async readApiByBody(requestObject) {
