@@ -2,15 +2,17 @@
 
 # dependencies
 /node_modules
-/server/node_modules/*
-/client/node_modules/*
+/server/node_modules
+/client/node_modules
 /.pnp
 .pnp.js
-/package-lock.json
+./client/package-lock.json
+./server/package-lock.json
 # testing
 /coverage
 
 # production
+./client/build
 /build
 
 # misc
