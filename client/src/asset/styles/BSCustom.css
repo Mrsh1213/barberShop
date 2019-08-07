@@ -1,11 +1,15 @@
-/*@font-face {*/
-    /*font-family: Tanha;*/
-    /*src: url('../../asset/.eot');*/
-    /*src: url('.eot?#iefix') format('embedded-opentype'),*/
-    /*url('tanha.woff') format('woff'),*/
-    /*url('.ttf') format('truetype');*/
-    /*font-weight: normal;*/
-/*}*/
+@font-face {
+    font-family: Tanha;
+    src: url('../../asset/fonts/Sahel.eot');
+    src: url('../../asset/fonts/Sahel.eot?#iefix') format('embedded-opentype'),
+    url('../../asset/fonts/Sahel.woff') format('woff'),
+    url('../../asset/fonts/Sahel.ttf') format('truetype');
+    src: url('../../asset/fonts/Sahel-FD.eot');
+    src: url('../../asset/fonts/Sahel-FD.eot?#iefix') format('embedded-opentype'),
+    url('../../asset/fonts/Sahel-FD.woff') format('woff'),
+    url('../../asset/fonts/Sahel-FD.ttf') format('truetype');
+    font-weight: normal;
+}
 body{
     font-family: Tanha !important;
 }

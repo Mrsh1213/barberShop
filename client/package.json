@@ -5,12 +5,14 @@
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
-    "jalali-moment": "^3.3.0",
+    "moment-jalaali": "^0.8.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.10",
     "react-dom": "^16.8.6",
     "react-icons": "^2.2.7",
+    "react-persian-calendar-date-picker": "^1.1.2",
+    "react-persian-datepicker": "^3.0.2",
     "react-redux": "^6.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.0",
@@ -22,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook"
+    "document": "jsdoc src --readme README.md -r -c jsdoc-config.json  -t node_modules/tui-jsdoc-template/"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,5 +41,12 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "jest-enzyme": "^7.1.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "react-test-renderer": "^16.8.6",
+    "tui-jsdoc-template": "^1.2.2",
+    "jsdoc": "^3.6.2"
+  }
 }

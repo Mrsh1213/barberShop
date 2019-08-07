@@ -1,17 +1,16 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import {withRouter} from "react-router-dom";
 import {Container, Card, Col, Row, Button} from "react-bootstrap";
 import BSTextField from "../component/Primary/BSTextField";
 import {FaUser, FaLock} from "react-icons/lib/fa";
 
-
 function SignIn() {
-    const [username, setUsername] = React.useState("")
-    const [password, setPassword] = React.useState("")
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
 
-    function login() {
+/*    function login() {
 
-    }
+    }*/
 
     return (<Container>
             <Row className={"py-5"}>
@@ -41,5 +40,4 @@ function SignIn() {
         </Container>
     );
 }
-
 export default withRouter(SignIn);
