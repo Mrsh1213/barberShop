@@ -30,3 +30,11 @@ body{
     border-top-left-radius: 0.5rem !important;
     border-top-right-radius: unset;
 }
+.bmd-label-static{
+    top: 1rem;
+    right: 0;
+    font-size: .75rem;
+
+}
+
+

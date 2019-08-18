@@ -1,9 +1,7 @@
 import React ,{useState} from 'react';
-import {withRouter} from "react-router-dom";
 import {Container, Card, Col, Row, Button} from "react-bootstrap";
 import BSTextField from "../component/Primary/BSTextField";
 import {FaUser, FaLock} from "react-icons/lib/fa";
-
 function SignIn() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -29,7 +27,7 @@ function SignIn() {
                                              label={<FaLock/>}/>
                             </Col>
                             <Col md={12} sm={12}>
-                                <Button block variant="primary" size={"md"}>ورود</Button>
+                                <Button block variant="outline-primary"  size={"md"}>ورود</Button>
                             </Col>
                         </Row>
                     </Card>
@@ -40,4 +38,4 @@ function SignIn() {
         </Container>
     );
 }
-export default withRouter(SignIn);
+export default (SignIn);
