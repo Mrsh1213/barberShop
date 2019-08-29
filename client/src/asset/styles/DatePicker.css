@@ -29,8 +29,8 @@
     border: 0; }
 .DatePicker__input:focus {
     color: #495057;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(to top, #009688 2px, rgba(0, 150, 136, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, 0.26) 1px, rgba(0, 0, 0, 0) 1px);
+    background-color: rgba(199, 38, 24, 0.77);
+    background-image: linear-gradient(to top, #9707BF 2px, rgba(0, 150, 136, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, 0.26) 1px, rgba(0, 0, 0, 0) 1px);
     outline: 0;
     background-size: 100% 100%, 100% 100%;
     transition-duration: 0.3s;
@@ -365,7 +365,7 @@ select.DatePicker__input:focus::-ms-value {
 
 
 .Calendar__monthSelectorItemText.-active, .Calendar__yearSelectorText.-active {
-    background-color: var(--cl-color-primary);
+    background-color: #9707BF;
     color: #fff;
 }
 

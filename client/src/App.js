@@ -1,6 +1,5 @@
 import React from 'react';
-import 'bootstrap-material-design/dist/css/bootstrap-material-design.css';
-import './asset/styles/BSCustom.css';
+import './asset/styles/bs4/BSCustom.css';
 import {Route, Switch} from 'react-router-dom';
 import SignIn from "./pages/SignIn";
 import NotFoundPage from './pages/ErrorsPage/NotFoundPage';

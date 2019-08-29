@@ -19,7 +19,7 @@ function SignIn() {
                             <Col md={12} sm={12}>
                                 <BSTextField value={username} setValue={setUsername} placeholder={"نام کاربری"}
                                              errors={[]}
-                                             label={<FaUser/>}/>
+                                             label={<FaUser/>} />
                             </Col>
                             <Col md={12} sm={12}>
                                 <BSTextField value={password} setValue={setPassword} placeholder={"رمز عبور"}
