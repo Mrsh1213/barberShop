@@ -23,13 +23,13 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-connectMongoDb();
+// connectMongoDb();
 app.use('/api/v1.0', checkToken,usersRouter)
 app.use('/', indexRouter);
-app.use("*", (req, res) => {
-    res.status(404).send(process.env.NOT_FOUND_MSG);
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 
 module.exports = app;

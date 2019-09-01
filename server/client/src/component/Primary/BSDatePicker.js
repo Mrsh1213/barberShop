@@ -1,7 +1,7 @@
 import React from 'react';
 import PropType from 'prop-types';
 import {Row, Col, Container, InputGroup, Form} from 'react-bootstrap';
-import "../../asset/styles/DatePicker.css";
+import "../../assets/styles/DatePicker.css";
 import {FaCalendar} from "react-icons/lib/fa";
 import DatePicker from "react-persian-calendar-date-picker/lib/DatePicker";
 import {jalaliDateToTimestamp, timestampDateTojalali} from "../../helper";

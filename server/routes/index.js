@@ -55,6 +55,12 @@ router.get('/login/:username?/:password?', async function (req, res) {
         })
     }
 });
+router.get('/gtest', function (req, res, next) {
+  res.json({name:"mohammad"})
+});
+router.get('/', async function (req, res) {
+    res.sendFile('public/build/index.html');
+});
 
 
 module.exports = router;

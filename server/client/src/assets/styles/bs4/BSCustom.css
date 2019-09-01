@@ -7,14 +7,14 @@
 }
 @font-face {
     font-family: Tanha;
-    src: url('../../fonts/Sahel.eot');
-    src: url('../../fonts/Sahel.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/Sahel.woff') format('woff'),
-    url('../../fonts/Sahel.ttf') format('truetype');
-    src: url('../../fonts/Sahel-FD.eot');
-    src: url('../../fonts/Sahel-FD.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/Sahel-FD.woff') format('woff'),
-    url('../../fonts/Sahel-FD.ttf') format('truetype');
+    /*src: url('../../fonts/Sahel.eot');*/
+    /*src: url('../../fonts/Sahel.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../../fonts/Sahel.woff') format('woff'),*/
+    /*url('../../fonts/Sahel.ttf') format('truetype');*/
+    /*src: url('../../fonts/Sahel-FD.eot');*/
+    /*src: url('../../fonts/Sahel-FD.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../../fonts/Sahel-FD.woff') format('woff'),*/
+    /*url('../../fonts/Sahel-FD.ttf') format('truetype');*/
     font-weight: normal;
 }
 body{
