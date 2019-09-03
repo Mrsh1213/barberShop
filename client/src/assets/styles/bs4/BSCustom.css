@@ -1,0 +1,55 @@
+
+@import url("./BS4Orginal.css");
+
+:root {
+    --form-control-shadow: rgba(207, 36, 255, 0.58);
+    --form-control-border: rgb(150, 8, 115);
+}
+@font-face {
+    font-family: Tanha;
+    /*src: url('../../fonts/Sahel.eot');*/
+    /*src: url('../../fonts/Sahel.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../../fonts/Sahel.woff') format('woff'),*/
+    /*url('../../fonts/Sahel.ttf') format('truetype');*/
+    /*src: url('../../fonts/Sahel-FD.eot');*/
+    /*src: url('../../fonts/Sahel-FD.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../../fonts/Sahel-FD.woff') format('woff'),*/
+    /*url('../../fonts/Sahel-FD.ttf') format('truetype');*/
+    font-weight: normal;
+}
+body{
+    font-family: Tanha !important;
+}
+.form-group{
+    text-align: right;
+}
+
+.input-group-text{
+    border-bottom-right-radius: 0.5rem !important;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 0.5rem !important;
+    border-top-left-radius: unset;
+}
+
+.form-control {
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: unset;
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: unset;
+    background-color: transparent;
+}
+.form-control:focus {
+    color: #000000;
+    background-color: #fff;
+    border-color: var(--form-control-border);
+    outline: 0;
+    box-shadow: 0 0 0 0.125rem var(--form-control-shadow);
+}
+.bmd-label-static{
+    top: 1rem;
+    right: 0;
+    font-size: .75rem;
+
+}
+
+
