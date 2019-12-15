@@ -1,8 +1,8 @@
 
 # dependencies
 /server/node_modules
-/server/client/node_modules
-/server/client/package-lock.json
+/client/node_modules
+/client/package-lock.json
 /server/package-lock.json
 /server/build
 /barberShop.iml
