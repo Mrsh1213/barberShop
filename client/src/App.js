@@ -1,20 +1,52 @@
-import React from 'react';
-import './assets/styles/bs4/BSCustom.css';
-import {Route, Switch} from 'react-router-dom';
-import SignIn from "./pages/SignIn";
-import NotFoundPage from './pages/ErrorsPage/NotFoundPage';
-import Test from "./component/Test";
+import React, {Component} from 'react';
+import {ThemeProvider} from '@material-ui/styles';
+import {createMuiTheme, jssPreset, StylesProvider} from '@material-ui/core/styles'
+import './App.css';
+import Routes from './routes'
+import {blue, indigo} from '@material-ui/core/colors'
+import {create} from 'jss';
+import rtl from 'jss-rtl';
 
-function App (props) {
-        return (
-            <Switch>
-                <Route exact path={"/signin"}
-                       component={SignIn}/>
-                <Route exact path={"/test"}
-                       component={Test}/>
-                <Route exact path={"*"}
-                       render={(props) => <NotFoundPage errorCode={404}/>}/>
-            </Switch>
-        );
+const jss = create({plugins: [...jssPreset().plugins, rtl()]});
+const theme = createMuiTheme({
+  palette: {
+    secondary: {
+      main: blue[900]
+    },
+    primary: {
+      main: indigo[700]
+    }
+  },
+  direction: 'rtl',
+  typography: {
+    // Use the system font instead of the default Roboto font.
+    fontFamily: [
+      '"Lato"',
+      'sans-serif'
+    ].join(',')
+  },
+  overrides: {
+    MuiSlider: {
+      root: {
+        color: "#ca0c85"
+      }
+    }
+  }
+});
+
+
+class App extends Component {
+  render() {
+    return (
+        <div>
+          <ThemeProvider theme={theme}>
+            <StylesProvider jss={jss}>
+              <Routes/>
+            </StylesProvider>
+          </ThemeProvider>
+        </div>
+    );
+  }
 }
+
 export default App;
