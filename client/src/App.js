@@ -8,7 +8,8 @@ import {create} from 'jss';
 import rtl from 'jss-rtl';
 
 const jss = create({plugins: [...jssPreset().plugins, rtl()]});
-const theme = createMuiTheme({
+const theme = createMuiTheme(
+    {
   palette: {
     secondary: {
       main: blue[900]
@@ -32,7 +33,8 @@ const theme = createMuiTheme({
       }
     }
   }
-});
+    }
+);
 
 
 class App extends Component {
