@@ -1,26 +1,26 @@
 const Menu = [
     {
-        label: "Home",
+        label: "خانه",
         pathname: "/"
     },
     {
-        label: "Dashboard",
+        label: "داشبورد",
         pathname: "/dashboard"
     },
     {
-        label: "Signup",
+        label: "ثبت نام",
         pathname: "/signup"
     },
     {
-        label: "Wizard",
+        label: "ویزارد",
         pathname: "/wizard"
     },
     {
-        label: "Cards",
+        label: "کارد",
         pathname: "/cards"
     },
     {
-        label: "Github",
+        label: "گیت",
         pathname: "https://github.com/alexanmtz/material-sense",
         external: true
     }

@@ -1,7 +1,8 @@
 import React ,{useState} from 'react';
-import {Container, Card, Col, Row, Button} from "react-bootstrap";
-import BSTextField from "../component/Primary/BSTextField";
-import {FaUser, FaLock} from "react-icons/lib/fa";
+import {TextField, Button} from '@material-ui/core';
+import {FaUser, FaLock} from "react-icons/fa";
+import Card from "@material-ui/core/Card";
+import Grid from "@material-ui/core/Grid";
 function SignIn() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -10,32 +11,27 @@ function SignIn() {
 
     }*/
 
-    return (<Container>
-            <Row className={"py-5"}>
-                <Col md={3} sm={1}/>
-                <Col md={6} sm={10}>
-                    <Card border={"primary"} bg={"light"} className={"py-5"} body>
-                        <Row>
-                            <Col md={12} sm={12}>
-                                <BSTextField value={username} setValue={setUsername} placeholder={"نام کاربری"}
+    return (<Grid container>
+            <Grid item md={3} sm={1}/>
+            <Grid item md={6} sm={10} container>
+
+                <Grid item md={12} sm={12}>
+                    <TextField value={username} setValue={setUsername} placeholder={"نام کاربری"}
                                              errors={[]}
                                              label={<FaUser/>} />
-                            </Col>
-                            <Col md={12} sm={12}>
-                                <BSTextField value={password} setValue={setPassword} placeholder={"رمز عبور"}
+                </Grid>
+                <Grid item md={12} sm={12}>
+                    <TextField value={password} setValue={setPassword} placeholder={"رمز عبور"}
                                              errors={[]}
                                              label={<FaLock/>}/>
-                            </Col>
-                            <Col md={12} sm={12}>
+                </Grid>
+                <Grid item md={12} sm={12}>
                                 <Button block variant="outline-primary"  size={"md"}>ورود</Button>
-                            </Col>
-                        </Row>
-                    </Card>
-                </Col>
-                <Col md={3} sm={1}/>
-            </Row>
+                </Grid>
+            </Grid>
+            <Grid item md={3} sm={1}/>
 
-        </Container>
+        </Grid>
     );
 }
 export default (SignIn);
