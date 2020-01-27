@@ -2,9 +2,9 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
 import {CardMedia} from "@material-ui/core";
 import withStyles from '@material-ui/styles/withStyles';
+import Link from "@material-ui/core/Link";
 
 const styles = theme => ({
     img: {
@@ -26,15 +26,12 @@ const styles = theme => ({
     },
 });
 BarberShopItem.propTypes = {
-    name: PropTypes.string,
-    address: PropTypes.string,
-    image: PropTypes.string,
-    rate: PropTypes.string,
-    countBarber: PropTypes.string,
+    data: PropTypes.object,
 };
 
 function BarberShopItem(props) {
-    const {classes, name, address, image, rate, countBarber} = props;
+    const {name, id, address, image, rate, countBarber} = props.data;
+    const {classes} = props;
     return (
         <Paper className={classes.paper}>
             <CardMedia
@@ -51,9 +48,9 @@ function BarberShopItem(props) {
                 </Typography>
             </div>
             <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                <Button color='primary' variant="contained" className={classes.actionButtom}>
-                    بیشتر
-                </Button>
+                <Link href={"/barberInfo/" + id}>
+                    بیشتر ...
+                </Link>
             </div>
         </Paper>
     );

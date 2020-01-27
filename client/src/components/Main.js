@@ -48,11 +48,12 @@ class Main extends Component {
                 <Topbar/>
                 <div className={classes.root}>
                     <Grid container justify="center">
-                        <Grid spacing={4} alignItems="center" justify="center" container className={classes.grid}>
-                            {barberShops.map(barberShop => <Grid item xs={12} md={4}><BarberShopItem
-                                name={barberShop.name} address={barberShop.address}
-                                image={barberShop.image}
-                                rate={barberShop.rate} countBarber={barberShop.countBarber}/></Grid>)
+                        <Grid spacing={4} alignItems="center" justify="right" container className={classes.grid}>
+                            {barberShops.map(barberShop => <Grid item xs={12} md={4}>
+                                <BarberShopItem
+                                    data={barberShop}
+                                />
+                            </Grid>)
                             }
                         </Grid>
                     </Grid>
