@@ -2,10 +2,7 @@ import React, {Component} from 'react';
 import withStyles from '@material-ui/styles/withStyles';
 import {withRouter} from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import barberShops from '../api/barberShop';
 
 
@@ -48,8 +45,8 @@ class Main extends Component {
                 <Topbar/>
                 <div className={classes.root}>
                     <Grid container justify="center">
-                        <Grid spacing={4} alignItems="center" justify="right" container className={classes.grid}>
-                            {barberShops.map(barberShop => <Grid item xs={12} md={4}>
+                        <Grid spacing={4} alignItems="center" justify="flex-start" container className={classes.grid}>
+                            {barberShops.map((barberShop, index) => <Grid key={index} item xs={12} md={4}>
                                 <BarberShopItem
                                     data={barberShop}
                                 />

@@ -1,5 +1,4 @@
-import {createMuiTheme, createPalette} from "@material-ui/core";
-import IRANSansWeb from "../assets/fonts/iransans/IRANSansWeb.ttf";
+import {createMuiTheme} from "@material-ui/core";
 
 
 const theme = (() => {

@@ -3,7 +3,6 @@ import {ThemeProvider} from '@material-ui/styles';
 import {jssPreset, StylesProvider} from '@material-ui/core/styles'
 import './App.css';
 import Routes from './routes'
-import {blue, indigo} from '@material-ui/core/colors'
 import {create} from 'jss';
 import rtl from 'jss-rtl';
 import theme from './confige/theme';

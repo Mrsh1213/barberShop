@@ -8,6 +8,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import MenuIcon from '@material-ui/icons/Menu';
+import salon from '../../images/salon.svg';
 import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -16,7 +17,6 @@ import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import {Link as MaterialLink} from '@material-ui/core'
 import Menu from './Menu';
 
-const logo = require('../../images/logo.svg');
 
 const styles = theme => ({
     appBar: {
@@ -128,13 +128,13 @@ class Topbar extends Component {
         return (
             <AppBar position="absolute" color="default" className={classes.appBar}>
                 <Toolbar>
-                    <Grid container spacing={24} alignItems="baseline">
+                    <Grid container spacing={10} alignItems="baseline">
                         <Grid item xs={12} className={classes.flex}>
                             <div className={classes.inline}>
                                 <Typography variant="h6" color="inherit" noWrap>
                                     <Link to='/' className={classes.link}>
-                                        <img width={20} src={logo} alt=""/>
-                                        <span className={classes.tagline}>Material Sense</span>
+                                        <img width={30} src={salon} alt=""/>
+                                        <span className={classes.tagline}>قیچی</span>
                                     </Link>
                                 </Typography>
                             </div>
@@ -142,7 +142,7 @@ class Topbar extends Component {
                                 <React.Fragment>
                                     <div className={classes.productLogo}>
                                         <Typography>
-                                            A material UI Template
+                                            رزرو نوبت آرایشگاه
                                         </Typography>
                                     </div>
                                     <div className={classes.iconContainer}>

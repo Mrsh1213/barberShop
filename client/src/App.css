@@ -18,3 +18,23 @@
         transform: rotate(360deg);
     }
 }
+
+.rc-rate-star {
+    cursor: default !important;
+}
+
+.rc-rate-star:focus {
+    outline: none;
+    cursor: default;
+}
+
+.rc-rate-star > div[role="radio"]:focus {
+    outline: none;
+    cursor: default;
+}
+
+.rc-rate-star-first {
+    direction: rtl !important;
+    right: 0 !important;
+    left: unset !important;
+}

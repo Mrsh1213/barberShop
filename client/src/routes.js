@@ -1,16 +1,13 @@
 import React from 'react'
 import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
 import Main from './components/Main'
-import ScrollToTop from './components/Layout/ScrollTop'
-import SignIn from "./pages/SignIn";
+// import SignIn from "./pages/SignIn";
 
 export default props => (
     <Router>
-        {/*<ScrollToTop>*/}
             <Switch>
                 <Route exact path='/' component={Main}/>
-                <Route exact path='/signup' component={SignIn}/>
+                {/*<Route exact path='/signup' component={SignIn}/>*/}
             </Switch>
-        {/*</ScrollToTop>*/}
     </Router>
 )

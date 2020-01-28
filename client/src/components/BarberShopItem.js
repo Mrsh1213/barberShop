@@ -2,9 +2,13 @@ import React from 'react';
 import * as PropTypes from 'prop-types';
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 import {CardMedia} from "@material-ui/core";
 import withStyles from '@material-ui/styles/withStyles';
-import Link from "@material-ui/core/Link";
+import Rate from 'rc-rate';
+import barber from '../images/barber.svg';
+import {IoIosCut} from "react-icons/io";
+import 'rc-rate/assets/index.css';
 
 const styles = theme => ({
     img: {
@@ -15,10 +19,12 @@ const styles = theme => ({
         textAlign: 'left',
         color: theme.palette.text.secondary,
     },
-    actionButtom: {
-        textTransform: 'uppercase',
+    reserveButtom: {
         margin: theme.spacing(1),
-        width: 152
+        backgroundColor: "#4feeed",
+        ':hover': {
+            backgroundColor: "#cf00ee",
+        }
     },
     box: {
         marginBottom: 40,
@@ -41,6 +47,20 @@ function BarberShopItem(props) {
             />
             <div className={classes.box}>
                 <Typography style={{textTransform: 'uppercase'}} color='secondary' gutterBottom>
+                    <div dir="ltr">
+                        <Rate
+                            defaultValue={rate}
+                            style={{
+                                fontSize: 20, flexDirection: "row-reverse",
+                                display: "flex"
+                            }}
+                            allowHalf
+                            allowClear={false}
+                            disabled
+                            character={<IoIosCut/>}
+                        />
+
+                    </div>
                     {name}
                 </Typography>
                 <Typography variant="body2" gutterBottom>
@@ -48,9 +68,11 @@ function BarberShopItem(props) {
                 </Typography>
             </div>
             <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                <Link href={"/barberInfo/" + id}>
-                    بیشتر ...
-                </Link>
+                <Button className={classes.reserveButtom}
+                        fullWidth color={"secondary"} variant={"contained"}
+                        href={"/barberInfo/" + id}>
+                    رزرو
+                </Button>
             </div>
         </Paper>
     );
